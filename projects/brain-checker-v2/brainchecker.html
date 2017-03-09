@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bardleware</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="/style/styles.css">
+
+
+
+</head>
+<body>
+
+<!--Nav Bar-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">/BRAIN CHECKER</a><span class="navbar-brand"> <span id="counter">101</span> remain out of 101 </span>
+    </div>
+</nav>
+
+
+
+<!--page content-->
+<div class="container-fluid sectionContainer sections">
+  <div class="sect row" id="testArea">
+
+    <div class="col-sm-6 qBox">
+        <div class="question"><p class="text-center" id="ques"></p></div>
+    </div>
+
+    <div class="col-sm-6">
+    <button type="button" class="btn btn-primary btn-block btn-lg" id="btn0">NEVER</button>
+    <button type="button" class="btn btn-primary btn-block btn-lg" id="btn1">RARELY</button>
+    <button type="button" class="btn btn-primary btn-block btn-lg" id="btn2">OCCASIONALLY</button>
+    <button type="button" class="btn btn-primary btn-block btn-lg" id="btn3">FREQUENTLY</button>
+    <button type="button" class="btn btn-primary btn-block btn-lg" id="btn4">VERY-FREQUENTLY</button>
+    </div>
+
+  </div>
+  <div class="row" id="resultsArea">
+      <div>
+          <div class="result" id="pfc"></div>
+          <div class="result" id="cing"></div>
+          <div class="result" id="limbic"></div>
+          <div class="result" id="bgang"></div>
+          <div class="result" id="temporal"></div>
+      </div>
+
+      <div>
+          <p>
+      </div>
+  </div>
+
+</div>
+
+
+<script src="http://devansprojects.net/scripts/brainChecker.js"></script>
+
+</body>
+</html>

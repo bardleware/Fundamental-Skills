@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Wage Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://devansprojects.net/style/styles.css">      
+    </head>
+    <body class="calculate">
+    <p class="calcL">Hours Worked:</p>
+    <input class="calcIn" type="text" id="hours"/>
+
+    <p class="calcL">Hourly Rate:</p>
+    <input class="calcIn" type="text" id="rate"/>
+    
+    <p class="calcL">Tax Rate:</p>
+    <input class="calcIn" type="text" id="tax"/>
+
+    <br/>
+    <br/>
+    <button class="mainButton" id="calc">Calculate</button>
+
+
+	<script>		
+			function calcWage() {
+			var hours = document.getElementById("hours").value;
+			var rate = document.getElementById("rate").value;
+			var taxRate = document.getElementById("tax").value;
+			
+			//alert("Hours " +hours);
+			//alert("Rate $" +rate);
+			//alert("Tax Rate " +taxRate)
+			
+			if (taxRate !== 0) {
+				var paycheck = hours * (rate - (rate * taxRate));
+			} else {
+				var paycheck = hours * rate;
+			}
+			paycheck = paycheck.toFixed(2);
+			alert("Your Paycheck will be around:\n$" + paycheck);
+
+			};
+		
+		var btnCalc = document.getElementById("calc");
+		btnCalc.addEventListener("click",calcWage);
+	</script>
+    
+</body>
+</html>

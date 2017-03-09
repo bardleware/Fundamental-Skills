@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Email Generator</title>
+
+
+    <link rel="stylesheet" href="./app.css">
+  </head>
+
+  <body>
+
+    <div class="main_app">
+      <div>
+        <h3>Please Choose which email you want to create:</h3>
+        <select id="whichEmail">
+            <option value="0">-- Select --</option>
+            <option value="1">Order Deleted & Authorization Drop</option>
+            <option value="2">Directions to Send in Rx</option>
+            <option value="3">Information to Access Rebate</option>
+          </select>
+          <button type="submit" id="btn_Select">Select</button>
+          <br> <br>
+        <input class="inputBox" id="custName" type="text" name="Customer_Name" placeholder="Customer Name">
+        <input class="inputBox" id="custID" type="text" name="Customer_ID" placeholder="Customer ID">
+        <input class="inputBox" id="agentName" type="text" name="Agent_Name" placeholder="Agent Name">
+        <input class="inputBox" id="orderNum" type="text" name="Order_Number" placeholder="Order Number">
+
+        <br> <br>
+
+        <button type="submit" id="generate">Generate Email</button>
+        <br> <br>
+      </div>
+      <!--Parameter containter-->
+      <div id="emailContainer">
+        <p id="email"></p>
+
+      </div>
+      <!--Generated email container-->
+    </div>
+    <!--main containter-->
+    <script src="./emailGenerator.js"></script>
+    <script src="./app.js"></script>
+   </body>
+
+  </html>

@@ -1,0 +1,22 @@
+body{
+    background-image: url(img/5.jpg);
+    background-repeat: repeat;
+    font-family: 'Kumar One', cursive;
+}
+
+#app-box{
+    background-color: #cedbef;
+    text-align: center;
+    padding-top: 35px;
+}
+.quote-box{
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Righteous', cursive;
+}
+.btn {
+    margin-bottom: 5px;
+}
